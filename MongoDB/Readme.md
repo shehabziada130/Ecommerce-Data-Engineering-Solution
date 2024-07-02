@@ -17,11 +17,9 @@ You should see an output similar to:
 2023-02-05T15:11:01.000-0500    no collection specified
 2023-02-05T15:11:01.000-0500    using filename '' as collection
 2023-02-05T15:11:01.000-0500    error validating settings: invalid collection name: collection name cannot be an empty string
+```
 
 
-Certainly! Here's the section for importing catalog data from JSON into MongoDB for your `README.md` file:
-
-```markdown
 ## 2. Import Catalog Data From JSON
 
 Ensure MongoDB is running:
@@ -43,7 +41,7 @@ sudo wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM
 Use `mongoimport` to import the downloaded JSON data into the `electronics` collection of the `catalog` database. Replace `PASSWORD` with your MongoDB password:
 
 ```bash
-mongoimport --host localhost --port 27017 --db catalog --collection electronics --authenticationDatabase admin --username root --password PASSWORD --file catalog.json
+mongoimport -u root --authenticationDatabase admin -p PASSWORD --db catalog --file catalog.json
 ```
 
 You should see output similar to:
@@ -54,12 +52,10 @@ You should see output similar to:
 ```
 
 This completes the import of catalog data into MongoDB.
-```
 
 
-Here’s the continuation of the `README.md` section for running test queries in MongoDB:
 
-```markdown
+
 ## 3. Run Test Queries
 
 ### Display List of Databases
@@ -67,7 +63,6 @@ Here’s the continuation of the `README.md` section for running test queries in
 To display a list of all databases, use the following command in the MongoDB CLI:
 
 ```bash
-mongo
 show dbs
 ```
 
@@ -96,11 +91,9 @@ electronics
 ```
 
 This confirms that the `electronics` collection exists in your `catalog` database.
-```
 
-Here’s the next part of the `README.md` section for creating an index and running additional test queries in MongoDB:
 
-```markdown
+
 ## 4. Create Index and Run Test Queries
 
 ### Create Index
@@ -174,11 +167,9 @@ You should see output similar to:
 ```
 
 This completes the index creation and test queries section for the `electronics` collection in your MongoDB database.
-```
 
-Here’s the continuation of the `README.md` section for exporting data from MongoDB to a CSV file:
 
-```markdown
+
 ## 5. Export Data to CSV
 
 To export the `electronics` collection into a CSV file named `electronics.csv` with only the `_id`, `type`, and `model` columns, use the following command in the MongoDB CLI:
@@ -197,4 +188,4 @@ You should see output similar to:
 This command exports 438 records from the `electronics` collection into a CSV file named `electronics.csv` in your current working directory.
 
 This completes the export data section for your MongoDB `electronics` collection.
-```
+
