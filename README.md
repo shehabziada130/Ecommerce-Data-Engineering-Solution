@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document introduces you to the data platform architecture of an ecommerce company leveraging a hybrid architecture with databases both on-premises and on the cloud.
+This document introduces you to the data platform architecture of an e-commerce company Named Softcart leveraging a hybrid architecture with databases both on-premises and on the cloud.
 
 ## Tools and Technologies
 
