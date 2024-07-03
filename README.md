@@ -3,6 +3,7 @@
 ## Overview
 
 This document introduces you to the data platform architecture of an e-commerce company Named Softcart leveraging a hybrid architecture with databases both on-premises and on the cloud.
+![data-platform-architecture](https://github.com/shehabziada130/Ecommerce-Data-Engineering-Solution/assets/84864669/ced174c0-c64e-4e3e-a26a-61528ef92874)
 
 ## Tools and Technologies
 
